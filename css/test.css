@@ -1,0 +1,105 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.main{
+	height: 100vh;
+	perspective: 2px;
+	overflow-x: hidden;
+	-webkit-overflow-scrolling:touch;
+}
+
+.section{
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 80vh;
+	font-size: 40px;
+	text-transform: 40px;
+	font-weight: bold;
+}
+.static-one{
+	background-color: #feceab;
+}
+.static-two{
+	background-color: #aacfcf;
+}
+.static-three{
+	background-color: #c06c84;
+}
+.parallax::after{
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-size: cover;
+	transform: translateZ(-1px) scale(1.7);
+	z-index: -1;
+}
+.parallax-one::after{
+	background-image: url(https://source.unsplash.com/vs6a4EHj_Ro/1600x900);
+}
+.parallax-two::after{
+	background-image: url(https://source.unsplash.com/P86-JPbDnPY/1600x900);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.container{
+	height: 200px;
+	width: 200px;
+	border:1px solid black;
+	perspective: 1px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	perspective: 8px;
+	perspective-origin: 50%;
+}
+.element{
+	height: 200px;
+	width: 200px;
+	background-color: red;
+	transform: translateZ(-8px);
+	animation: animateZ 2s infinite;
+}
+@keyframes animateZ{
+	from{
+		transform: translateZ(-8px);
+	}
+	to{
+		transform: translateZ(0px);
+	}
+}*/
